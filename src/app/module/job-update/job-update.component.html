@@ -1,0 +1,60 @@
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="main-container d-flex">
+    <section class="content">
+        <app-topbar></app-topbar>
+        <section id="main-page">
+            <section class="judul content-main container">
+                <section class="section-first">
+                    <div class="row">
+                        <div class="col-md-3 m-2">
+                            <ul class="list-unstyled justify-content-center bg-light kotak kotak1 border border-3">
+                                <p class="text-dark">Kelola jaringan saya</p>
+                                <li><span><i class="fa-solid fa-users pe-3"></i> Koneksi</span></li>
+                                <li><span><i class="fa-regular fa-address-book pe-3"></i> Kontak</span></li>
+                                <li><span><i class="fa-solid fa-user-plus pe-3"></i> Orang yang saya ikuti</span>
+                                </li>
+                                <li><span><i class="fa-regular fa-calendar-days pe-3"></i> Acara</span>
+                                </li>
+                                <li><span><i class="fa-solid fa-sheet-plastic pe-3"></i> Halaman</span></li>
+                                <li><span><i class="fa-regular fa-newspaper pe-3"></i> Newsletter</span></li>
+                            </ul>
+                            <div>
+                                <img src="assets/images/meeting.png" alt="" class="pb-3">
+                            </div>
+                        </div>
+                        <div class="col-md-8 m-2 ">
+                            <div class="kotak kotak2 bg-light border border-3">
+                                <div class="d-flex ps-2 pt-3">
+                                    <h6 class="text-secondary">Saran lainnya.</h6>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="col-md-12 col-12 d-flex">
+                                        <div class="row">
+                                            <div class="col-md-3 col-6" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
+                                                <div class="card mt-2">
+                                                    <img src="assets/images/user.png"
+                                                        class="card-img-top mx-auto d-block pt-2" alt="...">
+                                                    <div class="card-body text-center">
+                                                        <h5 class="card-title">Management Trainee</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <app-footer></app-footer>
+    </section>
+</div>

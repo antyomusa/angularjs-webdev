@@ -1,0 +1,4 @@
+<!--<input [(ngModel)]="text" type="text" (change)="setToText($event)" />
+
+{{ model }}-->
+<input [type]="isPassword ? 'password' : 'text'" (change)="iniFungsiTampungValue($event)">

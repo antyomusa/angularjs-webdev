@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Ubuntu&display=swap');
+
+$biru_1 : #00175d;
+$biru_2 : #02113e;
+$abu_1 : #c9c9c9;
+$abu_2 : #f9f9f9;
+$merah_1 : #f00707;
+$merah_2 : #b60303;
+$kuning_1 : #ffcc00;
+$kuning_2 : #dfb300;
+$hijau_1 : #00c14a;
+$hijau_2 : #048836;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    ;
+}
+
+section {
+    padding: 30px 20px 0 30px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: $biru_1;
+
+    .btn-account {
+        color: white;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: lowercase;
+
+        i {
+            margin: 5px;
+        }
+    }
+
+    .navbar-brand {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.container-sidebar {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: $biru_2;
+    width: 250px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    .header {
+        .list-item {
+            .btn {
+                color: $abu_1;
+                width: 30vh;
+                text-align: left;
+
+                i {
+                    margin-right: 15px;
+                    margin: 13px;
+                }
+            }
+
+            .btn:hover {
+                background-color: white;
+                color: $biru_1;
+                transform: scale(1.08);
+            }
+
+            p {
+                color: $abu_1;
+            }
+
+            hr {
+                color: white;
+                margin-bottom: 2px;
+            }
+
+        }
+    }
+}
+
+.sidebar.close {
+    width: 98px;
+
+    .btn p {
+        opacity: 0;
+    }
+}
+
+.main-content {
+    background-color: white;
+    flex-grow: 1;
+
+    h2 {
+        margin-bottom: 10px;
+        font-family: 'Merriweather', serif;
+        text-shadow: 10px 10px 5px lightblue;
+    }
+
+    .card {
+        width: 23rem;
+        color: $abu_2;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px lightblue;
+
+        text {
+            padding: 5px;
+        }
+
+        a {
+            color: $abu_2;
+        }
+
+
+    }
+
+    .card-1 {
+        background-color: $merah_1;
+    }
+
+    .card-2 {
+        background-color: $kuning_1;
+    }
+
+    .card-3 {
+        background-color: $hijau_1;
+    }
+
+    .card-1:hover {
+        background-color: $merah_2;
+    }
+
+    .card-2:hover {
+        background-color: $kuning_2;
+    }
+
+    .card-3:hover {
+        background-color: $hijau_2;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 576px) {
+
+        .card {
+            margin-bottom: 10px;
+        }
+
+        .sidebar {
+            left: -250px;
+        }
+    }
+
+
+    footer {
+        padding: 30px 20px 0 30px;
+        margin-bottom: 10px;
+        margin-top: auto;
+
+
+        span {
+            color: #767676;
+        }
+    }
+
+
+}

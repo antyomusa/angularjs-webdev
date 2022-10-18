@@ -1,0 +1,43 @@
+#footer {
+    margin-top: auto !important;
+    background: none;
+}
+
+#footer section {
+
+    padding: 20px;
+}
+
+#footer a {
+    text-align: center;
+    text-decoration: none;
+    color: #666666;
+    font-size: 13px;
+    list-style: none;
+}
+
+.little-footer {
+    font-size: 13px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 13px;
+    list-style: none;
+}
+
+.litte-footer:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#footer a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.footer-content i {
+    font-size: 25px;
+}
+
+.footer-content i:hover {
+    transform: scale(1.5);
+}

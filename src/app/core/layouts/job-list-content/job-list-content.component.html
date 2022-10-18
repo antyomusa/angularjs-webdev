@@ -1,0 +1,97 @@
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="main-container d-flex">
+    <section class="content">
+        <app-topbar></app-topbar>
+        <section id="main-page">
+            <section class="judul content-main container">
+                <section class="section-first">
+                    <div class="row">
+                        <div class="col-md-3 m-2">
+                            <ul class="list-unstyled justify-content-center bg-light kotak kotak1 border border-3">
+                                <li><span><i class="fa-solid fa-bookmark pe-2"></i> Pekerjaan Saya</span></li>
+                                <li><span><i class="fa-solid fa-bell pe-2"></i> Pemberitahuan pekerjaan</span></li>
+                                <li><span><i class="fa-regular fa-money-bill-1 pe-2"></i> Gaji</span></li>
+                                <li><span><i class="fa-regular fa-file-lines pe-2"></i> Penilaian Keahlian</span>
+                                </li>
+                                <li><span><i class="fa-brands fa-youtube pe-2"></i> Panduan Pekerja</span></li>
+                                <li><span><i class="fa-solid fa-gear pe-2"></i> Pengaturan</span></li>
+                            </ul>
+                            <button type="button"
+                                class="btn rounded-pill btn-outline-primary m-1 btn-sm p-2 btn-kotak1"><i
+                                    class="fa-solid fa-pen-to-square text-primary"></i> Posting Pekerjaan
+                                Gratis</button>
+                        </div>
+                        <div class="col-md-5 m-2 ">
+                            <div class="kotak kotak2 bg-light border border-3">
+                                <div class="d-flex ps-2 pt-3">
+                                    <h5>Pencarian pekerjaan yang disarankan</h5>
+                                </div>
+                                <div class="ms-2 mt-1">
+                                    <button type="button" class="btn rounded-pill btn-outline-primary m-1 btn-sm"><i
+                                            class="fa-solid fa-magnifying-glass text-primary"></i> Primary</button>
+                                    <button type="button" class="btn rounded-pill btn-outline-primary m-1 btn-sm"><i
+                                            class="fa-solid fa-magnifying-glass text-primary"></i> Hr</button>
+                                    <button type="button" class="btn rounded-pill btn-outline-primary m-1 btn-sm"><i
+                                            class="fa-solid fa-magnifying-glass text-primary"></i> Legal</button>
+                                    <button type="button" class="btn rounded-pill btn-outline-primary m-1 btn-sm"><i
+                                            class="fa-solid fa-magnifying-glass text-primary"></i> Sales</button>
+                                    <button type="button" class="btn rounded-pill btn-outline-primary m-1 btn-sm"><i
+                                            class="fa-solid fa-magnifying-glass text-primary"></i> Amazon</button>
+                                    <button type="button" class="btn rounded-pill btn-outline-primary m-1 btn-sm"><i
+                                            class="fa-solid fa-magnifying-glass text-primary"></i> Google</button>
+                                    <button type="button" class="btn rounded-pill btn-outline-primary m-1 btn-sm"><i
+                                            class="fa-solid fa-magnifying-glass text-primary"></i> Analyst</button>
+                                </div>
+                            </div>
+                            <div class="kotak kotak2 bg-light mt-4 border border-3">
+                                <div class="d-flex ps-2 pt-3">
+                                    <h5>Peluang Jarak Jauh</h5>
+                                </div>
+                                <span class="ps-2 ms-2 pb-4">Karena Anda menyatakan minat untuk pekerjaan jarak
+                                    jauh</span>
+                                <div class="row ms-2 pt-4 daftar-kerja d-flex"
+                                    *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
+                                    <div class="col-sm-2"><img src="https://thumbs.dreamstime.com/b/web-183282388.jpg"
+                                            alt=""></div>
+                                    <div class="col-sm-9">
+                                        <a href="">
+                                            <h6>Full Stack Engineer</h6>
+                                        </a>
+                                        <p><strong>NIKE</strong> </p>
+                                    </div>
+                                    <div class="col-sm-1"><i class="fa-solid fa-bookmark pe-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 m-2 kotak kotak3">
+                            <div>
+                                <img src="assets/images/meeting.png" alt="" class="pb-3">
+                            </div>
+                            <div class="mx-5">
+                                <span><a href="">Tentang</a></span>
+                                <span><a href="">Aksesibilitas</a></span>
+                                <span><a href="">Pusat Bantuan</a></span>
+                                <span><a href="">Privasi & Ketentuan</a></span>
+                                <span><a href="">Opsi Iklan</a></span>
+                                <span><a href="">Periklanan</a></span>
+                                <span><a href="">Layanan Bisnis</a></span>
+                                <span><a href="">Lainnya</a></span>
+                            </div>
+                            <div class="pt-10 text-dark">
+                                <span><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
+                                        alt="" height="15"> <strong>Anthony yoab @ 2022</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <app-footer></app-footer>
+    </section>
+</div>

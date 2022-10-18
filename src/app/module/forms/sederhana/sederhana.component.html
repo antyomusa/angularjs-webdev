@@ -1,0 +1,60 @@
+<div class="center-content">
+    <form [formGroup]="formGroupSederhana">
+        <div class="form-group">
+            <div>Name</div>
+            <div><input formControlName="name" type="text" class="input" placeholder="name"></div>
+        </div>
+        <div class="form-group">
+            <div>Nickname</div>
+            <div><input formControlName="nickname" type="text" class="input" placeholder="nickname"></div>
+        </div>
+        <div class="form-group">
+            <div>Email</div>
+            <div><input formControlName="email" type="email" class="input" placeholder="@Mail.com"></div>
+            <div *ngIf="formGroupSederhana.controls['email'].valid">
+                <span style="color: green;">Email Valid</span>
+            </div>
+            <div *ngIf="!formGroupSederhana.controls['email'].valid">
+                <span style="color: red;">Email tidak Valid</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div>Job</div>
+            <div><input formControlName="job" type="text" class="input" placeholder="job"></div>
+        </div>
+        <div class="form-group">
+            <div>Balance</div>
+            <div><input formControlName="balance" type="text" class="input" placeholder="balance"></div>
+        </div>
+        <div class="form-group">
+            <button (click)="submitButtonClick()" class="button">Submit</button>
+        </div>
+    </form>
+</div>
+
+<br>
+<br>
+<div class="center-content">
+    <table>
+        <tr>
+            <td>Name :</td>
+            <td>{{ displayName }}</td>
+        </tr>
+        <tr>
+            <td>Nickname :</td>
+            <td>{{ displayNickname }}</td>
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td>{{ displayEmail }}</td>
+        </tr>
+        <tr>
+            <td>Job :</td>
+            <td>{{ displayJob }}</td>
+        </tr>
+        <tr>
+            <td>Balance :</td>
+            <td>{{ displayBalance }}</td>
+        </tr>
+    </table>
+</div>

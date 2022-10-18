@@ -1,0 +1,113 @@
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="main-container d-flex">
+    <section class="content">
+        <app-topbar></app-topbar>
+        <section id="main-page">
+            <section class="judul content-main container">
+                <section class="section-first">
+                    <div class="row">
+                        <div class="col-md-3 m-2 justify-content-center">
+                            <div class="justify-content-center bg-light kotak kotak1 border border-3 ">
+                                <div class="text-center">
+                                    <img src="assets/images/user.png" alt="" width="60vh">
+                                    <div class="pt-4 pb-1">
+                                        <h5><a href="">Anthony Yoab</a></h5>
+                                    </div>
+                                    <div>
+                                        <p class="text-secondary">Siswa di Universitas Dirgantara Marsekal Suryadarma
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div text-left>
+                                    <p class="text-secondary">Koneksi</p>
+                                    <p>Kembangkan Jaringan anda</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 m-2 ">
+                            <div class="kotak kotak2 bg-light border border-3">
+                                <div class="d-flex ps-2 pt-1">
+                                    <img src="assets/images/user.png" alt="" width="40vh">
+                                    <div class="d-grid gap-2 px-1 container-fluid">
+                                        <input type="email" class="form-control rounded-pill"
+                                            placeholder="Mulai Buat Posting">
+                                    </div>
+                                </div>
+                                <div class="d-flex ps-3 pt-3">
+                                    <div class="col-3"><i class="fa-regular fa-image pe-2 text-primary"></i> Foto</div>
+                                    <div class="col-3"><i class="fa-brands fa-youtube pe-2 text-success"></i> Video
+                                    </div>
+                                    <div class="col-3"><i class="fa-regular fa-calendar-check pe-2 text-danger"></i>
+                                        Acara</div>
+                                    <div class="col-3"><i class="fa-solid fa-newspaper pe-2 text-danger"></i> Tulis
+                                        Artikel</div>
+                                </div>
+                            </div>
+                            <div class="row d-flex py-2">
+                                <div class="col-6">
+                                    <hr>
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <p>Sortir menurut : </p>
+                                    <div class="">
+                                        <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Terpopuler
+                                        </span>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kotak kotak2 bg-light mt-1 border border-3">
+                                <div class="row ms-1 pt-1 daftar-kerja d-flex pb-3" *ngFor="let item of [1,2,3,4,5,6]">
+                                    <div class="col-sm-2"><img
+                                            src="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg"
+                                            alt=""></div>
+                                    <div class="col-sm-9 pt-1">
+                                        <a href="" class="text-dark">
+                                            <h6>FreeCodeCamp</h6>
+                                        </a>
+                                        <p><strong>NIKE</strong> </p>
+                                    </div>
+                                    <p>TypeScript is a superset of JavaScript, which means it basically does what JS
+                                        does with some added features.</p>
+                                    <img src="assets/images/typescript.jfif" alt="" class="img-banner px-3">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 m-2 kotak kotak3">
+                            <div>
+                                <img src="assets/images/meeting.png" alt="" class="pb-3">
+                            </div>
+                            <div class="mx-5">
+                                <span><a href="">Tentang</a></span>
+                                <span><a href="">Aksesibilitas</a></span>
+                                <span><a href="">Pusat Bantuan</a></span>
+                                <span><a href="">Privasi & Ketentuan</a></span>
+                                <span><a href="">Opsi Iklan</a></span>
+                                <span><a href="">Periklanan</a></span>
+                                <span><a href="">Layanan Bisnis</a></span>
+                                <span><a href="">Lainnya</a></span>
+                            </div>
+                            <div class="pt-10 text-dark">
+                                <span><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
+                                        alt="" height="15"> <strong>Anthony yoab @ 2022</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <app-footer></app-footer>
+    </section>
+</div>

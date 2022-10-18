@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand pb-2" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
+                alt="" width="33" height="28">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <form class="d-flex">
+                    <input class="form-control me-2 search-navbar" type="search" placeholder="Search"
+                        aria-label="Search">
+                </form>
+            </ul>
+            <span class="navbar-text">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="" aria-current="page" class="text-center"><i class="fa-solid fa-house fa-lg"
+                                (click)="submitHome()"></i>
+                        </a>
+                        <a class="nav-link active" aria-current="page" href="#" (click)="submitHome()">Halaman
+                            Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" aria-current="page" class="text-center"><i class="fa-solid fa-users fa-lg"></i></a>
+                        <a class="nav-link" href="#">Job Update</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" aria-current="page" class="text-center"><i
+                                class="fa-solid fa-briefcase fa-lg"></i></a>
+                        <a class="nav-link" href="#">Job List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nav-link active" aria-current="page" class="text-center"><i
+                                class="fa-solid fa-comment fa-lg"></i></a>
+                        <a class="nav-link" href="#">Pesan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nav-link active" aria-current="page" class="text-center"><i
+                                class="fa-solid fa-bell fa-lg"></i></a>
+                        <a class="nav-link" href="#">Notifikasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nav-link active" aria-current="page" class="text-center"><i
+                                class="fa-solid fa-user fa-lg"></i></a>
+                        <a class="nav-link" href="#">Profil</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</nav>
